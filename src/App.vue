@@ -33,7 +33,8 @@ import About from './components/AboutVue.vue';
     text-align: center;
     font-weight: bold;
     color: #ffffff;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   h1 {
     font-size: calc(7000vw / 1018);
