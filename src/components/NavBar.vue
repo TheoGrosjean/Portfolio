@@ -3,7 +3,7 @@
     <ul>
       <li @click="scroll('home')">Home</li>
       <li @click="scroll('about')">About</li>
-      <li>Projects</li>
+      <!-- <li>Projects</li> -->
       <li>Contact</li>
     </ul>
   </div>
@@ -12,12 +12,12 @@
 <script>
   export default {
     name: "NavBar",
-    methods : {
+    methods: {
       scroll(id) {
         var loc = document.getElementById(id);
-        loc.scrollIntoView({ behavior: "smooth"});
-      }
-    }
+        loc.scrollIntoView({ behavior: "smooth" });
+      },
+    },
   };
 </script>
 
@@ -35,6 +35,7 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
+
   li:hover {
     transform: scale(1.1);
   }
@@ -52,17 +53,16 @@
     /* transform: translateY(-100%); */
   }
   @keyframes nav {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  50% {
-    opacity: 0;
-  }
-  100% {
-  opacity: 1;
-    transform: translateY(0);
-  }
-  
-}
 </style>
