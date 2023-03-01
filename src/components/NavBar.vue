@@ -1,8 +1,8 @@
 <template>
   <div class="navbar">
     <ul>
-      <li>Home</li>
-      <li>About</li>
+      <li @click="scroll('home')">Home</li>
+      <li @click="scroll('about')">About</li>
       <li>Projects</li>
       <li>Contact</li>
     </ul>
@@ -12,6 +12,12 @@
 <script>
   export default {
     name: "NavBar",
+    methods : {
+      scroll(id) {
+        var loc = document.getElementById(id);
+        loc.scrollIntoView({ behavior: "smooth"});
+      }
+    }
   };
 </script>
 
@@ -23,6 +29,14 @@
     margin: 0;
     width: 100%;
     justify-content: space-around;
+  }
+
+  li {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  li:hover {
+    transform: scale(1.1);
   }
   .navbar {
     height: 50px;

@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <img src="@/assets/theo.jpg" alt="me" />
-    <div class="text">
+  <div id="about" class="container">
+    <img id="imageProfil" src="@/assets/theo.jpg" alt="me" />
+    <div id="aboutText" class="text">
       <h1>About</h1>
       <p>
         My name is Théo and I am passionate about web development. Currently in
@@ -17,7 +17,29 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        animate: true,
+      };
+    },
+    mounted() {
+      window.addEventListener("scroll", this.handleScroll);
+    },
+    methods: {
+      handleScroll() {
+        const image = document.getElementById("imageProfil");
+        const txt = document.getElementById("aboutText");
+        const position = image.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (position < windowHeight && this.animate) {
+          this.animate = false;
+          txt.style.animation = "txtAbout 0.5s linear forwards";
+          image.style.animation = "profilImg 0.5s linear forwards";
+        }
+      },
+    },
+  };
 </script>
 
 <style scoped>
@@ -27,28 +49,14 @@
     align-items: center;
     justify-content: center;
     width: 900px;
+    /* animation: oui 1s linear forwards; */
   }
   img {
     height: 50vw;
     max-height: 700px;
-    animation: profilImg 1s linear forwards;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    /* animation: profilImg 1s linear forwards; */
   }
-  @keyframes profilImg {
-    0% {
-      box-shadow: 0px 0px rgba(255, 255, 255, 0.507);
-      filter: blur(5px) grayscale(1);
-    }
-    100% {
-      box-shadow: -50px -40px 80px rgba(255, 255, 255, 0.507);
-      filter: blur(0px) grayscale(1);
-    }
-  }
+
   p {
     font-weight: lighter;
     font-size: 1.5em;
