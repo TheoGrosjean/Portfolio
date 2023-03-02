@@ -3,7 +3,6 @@
     <ul>
       <li @click="scroll('home')">Home</li>
       <li @click="scroll('about')">About</li>
-      <!-- <li>Projects</li> -->
       <li>Contact</li>
     </ul>
   </div>
