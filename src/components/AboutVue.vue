@@ -92,15 +92,17 @@
   }
   li {
     list-style: none;
-    font-size: 1.5em;
     font-weight: lighter;
-    margin: 20px;
-    width: 100%;
+    width: 90%;
+    padding: 10px;
+    text-align: left;
   }
   p {
     font-weight: lighter;
     font-size: 1.5em;
-    width: 50%;
+    width: 90%;
+    padding: 10px;
+    text-align: left;
   }
   .about {
     display: flex;
@@ -123,21 +125,35 @@
     color: white;
     text-align: start;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 100px;
   }
   .experiences p {
-    font-size: 1em;
     width: 100%;
-    padding-left: 40px;
+    margin: 0;
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
   .experiences h4 {
-    padding-left: 20px;
+    margin : 0;
+    font-size: 1.8em;
   }
   .experiences h3 {
+    font-size: 2em;
+    margin-bottom: 25px;
     text-decoration: underline;
   }
   .xp {
-    width: 50%;
+    width: 100%;
+  }
+  ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 </style>

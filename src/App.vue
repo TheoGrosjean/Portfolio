@@ -2,26 +2,30 @@
   <NavBar />
   <LandingVue />
   <About />
+  <Competences />
+  <Contact/>
 </template>
 
 <script>
   import LandingVue from "./components/LandingVue.vue";
   import NavBar from "./components/NavBar.vue";
   import About from "./components/AboutVue.vue";
-
+  import Contact from "./components/ContactVue.vue";
+  import Competences from "./components/CompetencesVue.vue"
   export default {
     name: "App",
     components: {
       LandingVue,
       NavBar,
       About,
+      Contact,
+      Competences,
     },
  
   };
 </script>
 
 <style>
-
   @keyframes profilImg {
     0% {
       box-shadow: 0px 0px rgba(255, 255, 255, 0.507);
@@ -46,6 +50,7 @@
     left: 0;
     background-color: black;
     margin: 0;
+    overflow-x: hidden;
   }
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
