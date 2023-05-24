@@ -1,25 +1,18 @@
 <template>
-  <NavBar />
-  <LandingVue />
-  <About />
-  <Competences />
-  <Contact/>
+  <div class="desktop">
+    <NavBar />
+    <LandingVue />
+  </div>
 </template>
 
 <script>
   import LandingVue from "./components/LandingVue.vue";
   import NavBar from "./components/NavBar.vue";
-  import About from "./components/AboutVue.vue";
-  import Contact from "./components/ContactVue.vue";
-  import Competences from "./components/CompetencesVue.vue"
   export default {
     name: "App",
     components: {
       LandingVue,
       NavBar,
-      About,
-      Contact,
-      Competences,
     },
  
   };
@@ -61,17 +54,5 @@
     color: #ffffff;
     overflow-y: scroll;
     overflow-x: hidden;
-  }
-  h1 {
-    font-size: calc(7000vw / 1018);
-    z-index: 1;
-  }
-  h2 {
-    font-size: calc(4000vw / 1018);
-    z-index: 1;
-    letter-spacing: calc(2500vw / 1018);
-  }
-  h2::first-letter {
-    padding-left: calc(2500vw / 1018);
   }
 </style>

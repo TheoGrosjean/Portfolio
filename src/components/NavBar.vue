@@ -47,9 +47,9 @@
     align-items: center;
     display: flex;
     z-index: 2;
-    /* animation: nav 2s ease-in-out forwards; */
-    /* animation-delay: 1s; */
-    /* transform: translateY(-100%); */
+    animation: nav 1s ease-in-out forwards; 
+     animation-delay: 1s; 
+    transform: translateY(-100%);
   }
   @keyframes nav {
     0% {
