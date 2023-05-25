@@ -39,6 +39,7 @@
     transform: scale(1.1);
   }
   .navbar {
+  overflow: hidden;
     height: 50px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.795);

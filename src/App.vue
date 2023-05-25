@@ -2,17 +2,20 @@
   <div class="desktop">
     <NavBar />
     <LandingVue />
+    <Competences />
   </div>
 </template>
 
 <script>
   import LandingVue from "./components/LandingVue.vue";
   import NavBar from "./components/NavBar.vue";
+  import Competences from "./components/CompetencesVue.vue";
   export default {
     name: "App",
     components: {
       LandingVue,
       NavBar,
+      Competences,
     },
  
   };
@@ -52,7 +55,6 @@
     text-align: center;
     font-weight: bold;
     color: #ffffff;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 </style>

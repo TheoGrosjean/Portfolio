@@ -113,6 +113,8 @@
     overflow: hidden;
     position: relative;
     align-content: center;
+  overflow: hidden;
+
     flex-wrap: nowrap;
     gap: 20;
     background-image: url("@/assets/mac.jpg");
