@@ -1,12 +1,15 @@
 <template>
   <div class="container">
-    <div class="text_container">
+    <!-- <div class="text_container">
       <h1 id="title">About me</h1>
       <h2>Hi ! I'm Théo Grosjean</h2>
-      <p>I'm a French IT student in fourth year at Epitech Nancy, I'm passionate about web development </p>
-    </div>
+      <p>
+        I'm a French IT student in fourth year at Epitech Nancy, I'm passionate
+        about web development
+      </p>
+    </div> -->
     <!-- <img src="@/assets/IMG_4457.jpg" /> -->
-    <Avatar/>
+    <Avatar />
   </div>
 </template>
 
@@ -14,32 +17,28 @@
   import Avatar from "./AvatarVue.vue";
 
   export default {
-  components: {
-    Avatar,
-  },
+    components: {
+      Avatar,
+    },
     data() {
-      return {
-      };
+      return {};
     },
     mounted() {
-      let observer = new IntersectionObserver((entries) =>
-          {
-              entries.forEach((entry) =>
-              {
-                  console.log(entry.isIntersecting);
-              })
-          },
-      )
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry.isIntersecting);
+        });
+      });
       let target = document.querySelector("#title");
       observer.observe(target);
-    }
+    },
   };
 </script>
 
 <style scoped>
   .container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     width: 100vw;
     justify-content: space-between;
     background-clip: content-box;
