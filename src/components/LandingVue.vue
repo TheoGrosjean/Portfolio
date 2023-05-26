@@ -114,6 +114,8 @@
     position: relative;
     align-content: center;
   overflow: hidden;
+     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
 
     flex-wrap: nowrap;
     gap: 20;

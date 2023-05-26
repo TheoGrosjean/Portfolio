@@ -2,6 +2,9 @@
   <div class="desktop">
     <NavBar />
     <LandingVue />
+    <About />
+    <Competences />
+    <Competences />
     <Competences />
   </div>
 </template>
@@ -10,11 +13,13 @@
   import LandingVue from "./components/LandingVue.vue";
   import NavBar from "./components/NavBar.vue";
   import Competences from "./components/CompetencesVue.vue";
+  import About from "./components/AboutVue.vue";
   export default {
     name: "App",
     components: {
       LandingVue,
       NavBar,
+      About,
       Competences,
     },
  

@@ -84,13 +84,17 @@
     display: flex;
     flex-direction: column;
     position: relative;
-      overflow: hidden;
-
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #010101 0%, hsl(0, 3%, 17%) 100%);
-    padding: 120px 0 120px 0;
+    height: 100vh;
+    mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    ) ;
   }
+
   img {
     width: 100vw;
     object-fit: cover;
@@ -107,7 +111,7 @@
     white-space: nowrap;
   }
 .contenu-bandeau-bas {
-    animation: defilement 40s linear infinite alternate ;
+    animation: defilement 40s linear infinite  ;
     animation-direction: reverse;
     white-space: nowrap;
   }
