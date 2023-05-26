@@ -77,7 +77,7 @@
         dirLight.shadow.camera.far = 40;
         this.scene.add(dirLight);
 
-        new RGBELoader().load("/brown_photostudio_01.hdr", (texture) => {
+        new RGBELoader().load("/Portfolio/dist/brown_photostudio_01.hdr", (texture) => {
           texture.mapping = THREE.EquirectangularReflectionMapping;
           this.scene.environment = texture;
         });
@@ -90,10 +90,10 @@
         mesh.receiveShadow = true;
         this.scene.add(mesh);
 
-        await this.loadAvatar("/model.glb");
+        await this.loadAvatar("/Portfolio/dist/model.glb");
 
         const loader = new GLTFLoader();
-        loader.load("/animation.glb", (gltf) => {
+        loader.load("/Portfolio/dist/animation.glb", (gltf) => {
           const clip = this.filterAnimation(gltf.animations[0]);
           const action = this.mixer.clipAction(clip);
           this.walkAction = action;
