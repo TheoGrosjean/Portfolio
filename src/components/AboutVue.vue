@@ -3,14 +3,20 @@
     <div class="text_container">
       <h1 id="title">About me</h1>
       <h2>Hi ! I'm Théo Grosjean</h2>
-      <p>I'm a French IT student in fourth year at Epitech Nancy</p>
+      <p>I'm a French IT student in fourth year at Epitech Nancy, I'm passionate about web development </p>
     </div>
-    <img src="@/assets/IMG_4457.jpg" />
+    <!-- <img src="@/assets/IMG_4457.jpg" /> -->
+    <Avatar/>
   </div>
 </template>
 
 <script>
+  import Avatar from "./AvatarVue.vue";
+
   export default {
+  components: {
+    Avatar,
+  },
     data() {
       return {
       };

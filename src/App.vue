@@ -4,8 +4,6 @@
     <LandingVue />
     <About />
     <Competences />
-    <Competences />
-    <Competences />
   </div>
 </template>
 
@@ -22,7 +20,6 @@
       About,
       Competences,
     },
- 
   };
 </script>
 
@@ -36,7 +33,8 @@
       box-shadow: -50px -40px 80px rgba(255, 255, 255, 0.507);
       filter: blur(0px) grayscale(1);
     }
-  }  @keyframes txtAbout {
+  }
+  @keyframes txtAbout {
     0% {
       opacity: 0;
       filter: blur(5px) grayscale(1);

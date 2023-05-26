@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="@/assets/brain.jpg"/>
+    <img src="@/assets/brain.jpg" />
     <div class="bandeau">
       <div class="contenu-bandeau">
         <p class="card">Vuejs</p>
@@ -13,7 +13,7 @@
         <p class="card">Sql</p>
         <p class="card">Threejs</p>
         <p class="card">Vuetify</p>
-             <p class="card">Vuejs</p>
+        <p class="card">Vuejs</p>
         <p class="card">docker</p>
         <p class="card">Html</p>
         <p class="card">css</p>
@@ -23,7 +23,7 @@
         <p class="card">Sql</p>
         <p class="card">Threejs</p>
         <p class="card">Vuetify</p>
-             <p class="card">Vuejs</p>
+        <p class="card">Vuejs</p>
         <p class="card">docker</p>
         <p class="card">Html</p>
         <p class="card">css</p>
@@ -48,7 +48,7 @@
         <p class="card">Gitlab</p>
         <p class="card">React</p>
         <p class="card">FastAPI</p>
-            <p class="card">Django</p>
+        <p class="card">Django</p>
         <p class="card">NuxtJS</p>
         <p class="card">Github</p>
         <p class="card">MongoDB</p>
@@ -58,7 +58,7 @@
         <p class="card">Gitlab</p>
         <p class="card">React</p>
         <p class="card">FastAPI</p>
-            <p class="card">Django</p>
+        <p class="card">Django</p>
         <p class="card">NuxtJS</p>
         <p class="card">Github</p>
         <p class="card">MongoDB</p>
@@ -68,7 +68,7 @@
         <p class="card">Gitlab</p>
         <p class="card">React</p>
         <p class="card">FastAPI</p>
-        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -92,7 +92,7 @@
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0)
-    ) ;
+    );
   }
 
   img {
@@ -107,11 +107,11 @@
     overflow: hidden;
   }
   .contenu-bandeau {
-    animation: defilement 40s linear infinite alternate ;
+    animation: defilement 40s linear infinite alternate;
     white-space: nowrap;
   }
-.contenu-bandeau-bas {
-    animation: defilement 40s linear infinite  ;
+  .contenu-bandeau-bas {
+    animation: defilement 40s linear infinite;
     animation-direction: reverse;
     white-space: nowrap;
   }
@@ -123,7 +123,8 @@
     text-shadow: 0px 10px 100px rgba(255, 255, 255, 0.507);
     z-index: 1;
   }
-  .contenu-bandeau p, .contenu-bandeau-bas p {
+  .contenu-bandeau p,
+  .contenu-bandeau-bas p {
     display: inline-block;
     z-index: 1;
     margin-right: 60px; /* Marge entre les éléments <p> */
@@ -132,8 +133,8 @@
     font-size: 28px;
     font-weight: 900;
   }
-  .separator{
-  height: 100%;
+  .separator {
+    height: 100%;
   }
 
   @keyframes defilement {
