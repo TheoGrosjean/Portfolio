@@ -91,14 +91,14 @@
     font-weight: 500;
     font-style: normal;
     font-family: "Inter", sans-serif;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255);
     font-size: 24px;
     letter-spacing: -0.5px;
-    margin-top: 50px;
+    margin-top: 90px;
     line-height: 1.5;
     opacity: 0;
     text-align: center;
-    animation: appear 0.4s 1s ease-in forwards;
+    animation: text 0.4s 1s ease-in forwards;
   }
   .bg {
     box-sizing: border-box;
@@ -138,7 +138,7 @@
   }
   @keyframes appear {
     to {
-    opacity: 0.89;
+    opacity: 0.6;
     }
   }
 </style>

@@ -100,7 +100,7 @@
     object-fit: cover;
     position: absolute;
     height: 100vh;
-    opacity: 0.5;
+    opacity: 0.4;
   }
   .bandeau {
     width: 100%;
@@ -144,6 +144,11 @@
 
     100% {
       transform: translateX(-90%);
+    }
+  }
+  @media (max-width: 528px) {
+    h1 {
+      font-size: 40px;
     }
   }
 </style>
