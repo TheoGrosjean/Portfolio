@@ -1,24 +1,22 @@
 <template>
   <div class="container">
-    <!-- <div class="text_container">
-      <h1 id="title">About me</h1>
-      <h2>Hi ! I'm Théo Grosjean</h2>
+    <div class="text_container">
+      <h1 id="title">À propos de moi</h1>
       <p>
-        I'm a French IT student in fourth year at Epitech Nancy, I'm passionate
-        about web development
+        J'ai 25 ans et je suis étudiant à Epitech Nancy depuis 2019, je suis passionné par le développement web et la programmation en général.<br/>
+      Vous etes sur mon portfolio, vous y trouverez mes projets, mes compétences et mes expériences.
+      N'hesitez pas à me contacter si vous avez des questions ou des propositions de travail.
       </p>
-    </div> -->
-    <!-- <img src="@/assets/IMG_4457.jpg" /> -->
-    <Avatar />
+    </div>
+     <img src="@/assets/IMG_4457.jpg" />
+    <!-- <Avatar /> -->
   </div>
 </template>
 
 <script>
-  import Avatar from "./AvatarVue.vue";
 
   export default {
     components: {
-      Avatar,
     },
     data() {
       return {};
@@ -38,9 +36,8 @@
 <style scoped>
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100vw;
-    justify-content: space-between;
     background-clip: content-box;
     /* -webkit-mask-image: linear-gradient(to top, black 1%, transparent 90%); */
     mask-image: linear-gradient(to top, transparent, black, transparent);
@@ -57,25 +54,27 @@
   .text_container {
     display: flex;
     /* background: linear-gradient(90deg, #484747 10%, #010101 50%); */
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    text-align: start;
     flex-direction: column;
     width: auto;
-    padding-left: 25px;
+    padding-left: 250px;
     height: 100%;
+    width: 100vw;
   }
   .text_container h1 {
     font-family: "Inter", "Inter Placeholder", sans-serif;
     letter-spacing: -2;
     line-height: 1.2;
     text-align: left;
+    padding-right: 10px;
     color: white;
     mix-blend-mode: difference;
-    font-size: 180px;
+    font-size: 80px;
     font-weight: 700;
     font-style: normal;
-    opacity: 0;
-    transition: opacity 0.5s;
+    opacity: 1;
     z-index: 1;
   }
   .text_container h1.animate {

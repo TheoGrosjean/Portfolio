@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="@/assets/brain.jpg" />
+    <img src="@/assets/mac2.jpg" />
     <div class="bandeau">
       <div class="contenu-bandeau">
         <p class="card">Vuejs</p>
