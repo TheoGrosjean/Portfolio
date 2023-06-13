@@ -23,14 +23,16 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Checkout build branch
-      run: git checkout -B build origin/build
+    - name: Checkout deploy-branch
+      run: git checkout -B deploy-branch origin/deploy-branch
 
     - name: Copy dist folder
       run: cp -r dist/* .
 
     - name: Commit and push changes
       run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git add .
         git commit -m "Build and deploy"
-        git push origin build
+        git push origin deploy-branch
