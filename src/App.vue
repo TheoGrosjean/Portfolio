@@ -2,19 +2,27 @@
   <div class="desktop">
     <NavBar />
     <LandingVue />
+    <About />
+    <Competences />
+    <Experiences/>
   </div>
 </template>
 
 <script>
   import LandingVue from "./components/LandingVue.vue";
   import NavBar from "./components/NavBar.vue";
+  import Competences from "./components/CompetencesVue.vue";
+  import About from "./components/AboutVue.vue";
+import Experiences from "./components/Experiences.vue";
   export default {
     name: "App",
     components: {
-      LandingVue,
-      NavBar,
-    },
- 
+    LandingVue,
+    NavBar,
+    About,
+    Competences,
+    Experiences
+},
   };
 </script>
 
@@ -28,7 +36,8 @@
       box-shadow: -50px -40px 80px rgba(255, 255, 255, 0.507);
       filter: blur(0px) grayscale(1);
     }
-  }  @keyframes txtAbout {
+  }
+  @keyframes txtAbout {
     0% {
       opacity: 0;
       filter: blur(5px) grayscale(1);
@@ -52,7 +61,6 @@
     text-align: center;
     font-weight: bold;
     color: #ffffff;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 </style>
