@@ -296,13 +296,14 @@ svg {
   height: fit-content;
 }
 .container {
-  height: 100vh;
+  height: fit-content;
   gap: 100px;
   padding-top: 200px;
   /* background-color: white; */
   width: 100vw;
   flex-wrap: wrap;
   display: flex;
+  padding-bottom: 100px;
   align-items: center;
   justify-content: center;
 }
