@@ -1,5 +1,5 @@
 <template>
-  <div class="bg">
+  <div id="home" class="bg">
     
     <h1>Théo Grosjean</h1>
     <h2>

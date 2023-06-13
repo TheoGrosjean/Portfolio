@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="competences" class="container">
     <img src="@/assets/mac2.jpg" />
     <div class="bandeau">
       <div class="contenu-bandeau">
