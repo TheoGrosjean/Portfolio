@@ -24,7 +24,7 @@ jobs:
       run: npm run build
 
     - name: Checkout deploy-branch
-      run: git checkout -B deploy-branch origin/deploy-branch
+      run: git checkout deploy-branch
 
     - name: Copy dist folder
       run: cp -r dist/* .
