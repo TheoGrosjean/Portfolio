@@ -28,9 +28,11 @@
             entry.target.animate([
               {transform: "perspective(100vw) rotateX(-90deg) translateY(50%)", opacity : 0},
               { opacity : 1},
+
             ], {
               duration: 700,
             })
+            observer.disconnect()
           }
         }
       }, options)
@@ -107,6 +109,10 @@
       width: 90%;
       height: auto;
       /* display: none; */
+    }
+    .container {
+    mask-image:none
+
     }
   }
 </style>

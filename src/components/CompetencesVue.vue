@@ -86,12 +86,11 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 40vh;
     mask-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0)
     );
   }
 
@@ -101,6 +100,7 @@
     position: absolute;
     height: 100vh;
     opacity: 0.4;
+    z-index: -3;
   }
   .bandeau {
     width: 100%;
@@ -150,5 +150,11 @@
     h1 {
       font-size: 40px;
     }
+  }
+  @media (max-width: 528px) {
+    .container {
+      mask-image: none;
+    }
+
   }
 </style>
