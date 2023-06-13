@@ -3,6 +3,8 @@
     <ul>
       <li @click="scroll('home')">Home</li>
       <li @click="scroll('about')">About</li>
+      <li @click="scroll('competences')">Competences</li>
+      <li @click="scroll('experiences')">Experiences</li>
       <li>Contact</li>
     </ul>
   </div>
