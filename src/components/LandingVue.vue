@@ -3,8 +3,7 @@
     
     <h1>Théo Grosjean</h1>
     <h2>
-      Designing the Future<br />
-      Where Creativity and Code Converge.
+      Portfolio
     </h2>
   </div>
   <svg
@@ -14,6 +13,7 @@
     stroke-width="1.5"
     stroke="currentColor"
     class="w-6 h-6"
+    @click="scroll('about')"
   >
     <path
       stroke-linecap="round"
@@ -26,6 +26,12 @@
 <script>
   export default {
     name: "LandingVue",
+    methods: {
+      scroll(id) {
+        var loc = document.getElementById(id);
+        loc.scrollIntoView({ behavior: "smooth" });
+      },
+    },
   };
 </script>
 
@@ -35,6 +41,7 @@
     bottom: 100px;
     width: 40px;
     z-index: 1;
+    cursor: pointer;
     opacity: 0.3;
     animation: arrow 2s ease-in-out infinite alternate;
   }
@@ -116,7 +123,7 @@
   overflow: hidden;
      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
-
+    background-repeat: no-repeat;
     flex-wrap: nowrap;
     gap: 20;
     background-image: url("@/assets/mac.jpg");
