@@ -5,7 +5,7 @@
       <p id="txt">
         J'ai 25 ans et je suis étudiant à Epitech Nancy depuis 2019, je suis passionné par
         le développement web et la programmation en général.<br />
-        Vous etes sur mon portfolio, vous y trouverez mes projets, mes compétences et mes
+        Vous êtes sur mon portfolio, vous y trouverez mes projets, mes compétences et mes
         expériences. N'hesitez pas à me contacter si vous avez des questions ou des
         propositions de travail.
       </p>
