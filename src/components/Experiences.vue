@@ -456,5 +456,8 @@ p {
   .card_lbp {
     width: 500px;
   }
+  .card_freelance {
+    width: 500px;
+  }
 }
 </style>
