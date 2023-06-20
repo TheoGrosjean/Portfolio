@@ -1,10 +1,10 @@
 <template>
   <div class="navbar">
     <ul>
-      <li @click="scroll('home')">Acceuil</li>
+      <li @click="scroll('home')">Accueil</li>
       <li @click="scroll('about')">A propos</li>
-      <li @click="scroll('competences')">Competences</li>
-      <li @click="scroll('experiences')">Experiences</li>
+      <li @click="scroll('competences')">Compétences</li>
+      <li @click="scroll('experiences')">Expériences</li>
     </ul>
   </div>
 </template>

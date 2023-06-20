@@ -77,7 +77,7 @@
           />
         </svg>
         <p>
-          Participation à des réunion <br />
+          Participation à des réunions <br />
           présentations des réalisations
         </p>
       </div>
@@ -160,8 +160,8 @@
           />
         </svg>
         <p>
-          Création d'un plateforme web pour faciliter <br />
-          la visualisation et l'amelioration des datasets
+          Création d'une plateforme web pour faciliter <br />
+          la visualisation et l'amélioration des datasets
         </p>
       </div>
     </div>
