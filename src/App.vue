@@ -5,6 +5,7 @@
     <About />
     <Competences />
     <Experiences />
+    <Creation/>
     <Footer />
   </div>
 </template>
@@ -15,12 +16,14 @@ import NavBar from "./components/NavBar.vue";
 import Competences from "./components/CompetencesVue.vue";
 import About from "./components/AboutVue.vue";
 import Footer from "./components/Footer.vue"
+import Creation from "./components/Creation.vue";
 import Experiences from "./components/Experiences.vue";
 export default {
   name: "App",
   components: {
     LandingVue,
     NavBar,
+    Creation,
     About,
     Competences,
     Experiences,
